@@ -1,4 +1,4 @@
-# skibidi_drones
+# drones
 
 goturn.caffemodel 
 goturn.prototxt
