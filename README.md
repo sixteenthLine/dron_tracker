@@ -1,4 +1,4 @@
-# drones
+# Drones
 
 goturn.caffemodel 
 goturn.prototxt
