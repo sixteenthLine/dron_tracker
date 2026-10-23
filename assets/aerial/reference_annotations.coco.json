@@ -1,0 +1,252 @@
+{
+  "info": {
+    "description": "Reference annotations for two public previews; NOT model predictions",
+    "source_annotation_sha256": "5e0860a6db508d17a4c817fd30e6f46f902575daa7fbb40aeb0fdc1c2bf99223",
+    "coordinate_transform": "Original COCO xywh scaled to each resized sample; no boxes invented"
+  },
+  "images": [
+    {
+      "id": 0,
+      "file_name": "park.jpg",
+      "width": 1600,
+      "height": 1200,
+      "license": 1
+    },
+    {
+      "id": 100,
+      "file_name": "terrain.jpg",
+      "width": 1600,
+      "height": 1200,
+      "license": 1
+    }
+  ],
+  "annotations": [
+    {
+      "id": 0,
+      "image_id": 0,
+      "category_id": 1,
+      "bbox": [
+        571.2,
+        601.6,
+        23.200000000000003,
+        25.200000000000003
+      ],
+      "area": 584.6400000000001,
+      "iscrowd": 0
+    },
+    {
+      "id": 1,
+      "image_id": 0,
+      "category_id": 1,
+      "bbox": [
+        600.0,
+        606.0,
+        13.200000000000001,
+        16.400000000000002
+      ],
+      "area": 216.48000000000005,
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "image_id": 0,
+      "category_id": 1,
+      "bbox": [
+        682.0,
+        670.4000000000001,
+        28.8,
+        22.400000000000002
+      ],
+      "area": 645.1200000000001,
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "image_id": 0,
+      "category_id": 1,
+      "bbox": [
+        484.8,
+        749.6,
+        29.6,
+        19.6
+      ],
+      "area": 580.1600000000001,
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "image_id": 0,
+      "category_id": 1,
+      "bbox": [
+        471.20000000000005,
+        717.2,
+        17.2,
+        21.6
+      ],
+      "area": 371.52,
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "image_id": 0,
+      "category_id": 1,
+      "bbox": [
+        594.8000000000001,
+        305.6,
+        23.200000000000003,
+        26.400000000000002
+      ],
+      "area": 612.4800000000001,
+      "iscrowd": 0
+    },
+    {
+      "id": 6,
+      "image_id": 0,
+      "category_id": 1,
+      "bbox": [
+        481.6,
+        320.0,
+        22.0,
+        22.8
+      ],
+      "area": 501.6,
+      "iscrowd": 0
+    },
+    {
+      "id": 7,
+      "image_id": 0,
+      "category_id": 1,
+      "bbox": [
+        3.2,
+        480.0,
+        49.2,
+        23.200000000000003
+      ],
+      "area": 1141.4400000000003,
+      "iscrowd": 0
+    },
+    {
+      "id": 8,
+      "image_id": 0,
+      "category_id": 1,
+      "bbox": [
+        18.8,
+        453.6,
+        52.0,
+        27.200000000000003
+      ],
+      "area": 1414.4,
+      "iscrowd": 0
+    },
+    {
+      "id": 9,
+      "image_id": 0,
+      "category_id": 1,
+      "bbox": [
+        97.2,
+        904.8000000000001,
+        40.400000000000006,
+        35.2
+      ],
+      "area": 1422.0800000000004,
+      "iscrowd": 0
+    },
+    {
+      "id": 10,
+      "image_id": 0,
+      "category_id": 1,
+      "bbox": [
+        28.400000000000002,
+        787.6,
+        44.800000000000004,
+        23.6
+      ],
+      "area": 1057.2800000000002,
+      "iscrowd": 0
+    },
+    {
+      "id": 11,
+      "image_id": 0,
+      "category_id": 1,
+      "bbox": [
+        19.6,
+        731.6,
+        21.6,
+        19.6
+      ],
+      "area": 423.36000000000007,
+      "iscrowd": 0
+    },
+    {
+      "id": 12,
+      "image_id": 0,
+      "category_id": 1,
+      "bbox": [
+        133.20000000000002,
+        940.8000000000001,
+        46.0,
+        30.400000000000002
+      ],
+      "area": 1398.4,
+      "iscrowd": 0
+    },
+    {
+      "id": 13,
+      "image_id": 0,
+      "category_id": 1,
+      "bbox": [
+        182.0,
+        1061.2,
+        42.0,
+        44.800000000000004
+      ],
+      "area": 1881.6000000000001,
+      "iscrowd": 0
+    },
+    {
+      "id": 14,
+      "image_id": 0,
+      "category_id": 1,
+      "bbox": [
+        123.2,
+        826.8000000000001,
+        21.200000000000003,
+        17.6
+      ],
+      "area": 373.12000000000006,
+      "iscrowd": 0
+    },
+    {
+      "id": 190,
+      "image_id": 100,
+      "category_id": 1,
+      "bbox": [
+        433.20000000000005,
+        567.2,
+        40.0,
+        25.6
+      ],
+      "area": 1024.0,
+      "iscrowd": 0
+    }
+  ],
+  "categories": [
+    {
+      "id": 0,
+      "name": "Human",
+      "supercategory": "none"
+    },
+    {
+      "id": 1,
+      "name": "human",
+      "supercategory": "Human"
+    }
+  ],
+  "licenses": [
+    {
+      "id": 1,
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "CC BY 4.0"
+    }
+  ]
+}

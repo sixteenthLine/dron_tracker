@@ -1,0 +1,21 @@
+[training]
+manifest = "outputs/training/data/manifest.json"
+image_root = "Heridal.v2-yolo_non_412.coco/train"
+output_dir = "outputs/training/local_pilot"
+scope = "pilot"
+device = "cpu"
+image_size = 512
+tile_size = 768
+overlap = 128
+batch_size = 1
+inference_batch_size = 1
+epochs = 2
+max_steps = 120
+max_minutes = 8.0
+train_limit = 64
+val_limit = 2
+train_mode = "heads"
+learning_rate = 0.001
+seed = 42
+checkpoint_every = 20
+patience = 5
