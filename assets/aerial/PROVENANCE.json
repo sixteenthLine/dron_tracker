@@ -1,0 +1,55 @@
+{
+  "dataset": "HERIDAL, local Roboflow v2 yolo_non_412 export",
+  "credit": "Dunja Bozic-Stulic, Zeljko Marusic, Sven Gotovac; HERIDAL dataset; Roboflow export",
+  "source_url": "https://universe.roboflow.com/new-workspace-qsuag/heridal-t428z",
+  "original_dataset_url": "http://ipsar.fesb.unist.hr/HERIDAL%20database.html",
+  "export_date": "2022-10-17",
+  "annotation_sha256": "5e0860a6db508d17a4c817fd30e6f46f902575daa7fbb40aeb0fdc1c2bf99223",
+  "purpose": "Civilian offline still-image portfolio examples; no training or benchmark",
+  "reference_annotations": "reference_annotations.coco.json",
+  "reference_annotations_sha256": "0d1436309cf11f231055358a461e63ac7401e50db30785b237cb45de314faac8",
+  "samples": [
+    {
+      "file": "park.jpg",
+      "source_image_id": 0,
+      "source_file_name": "train_ZRI_2063_JPG.rf.fbbd84ecf8857e3d62fe6aabce349d17.jpg",
+      "source_sha256": "89e8c0924be84f98402ff39d48f93fb8e48da62befc0f396f8a237cc88c44c5e",
+      "sample_sha256": "e327cb6819e58113b3148c2ec882dd7a0e0e299f65e378a66139279ca58c3248",
+      "original_dimensions": [
+        4000,
+        3000
+      ],
+      "sample_dimensions": [
+        1600,
+        1200
+      ],
+      "changes": "Full frame resized to fit 1600x1200; JPEG quality 90; no crop; metadata not copied",
+      "license": {
+        "id": 1,
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "name": "CC BY 4.0"
+      }
+    },
+    {
+      "file": "terrain.jpg",
+      "source_image_id": 100,
+      "source_file_name": "train_VRD_3123_JPG.rf.08c2808f59e2b06aee1ca21edbfaac28.jpg",
+      "source_sha256": "828f86ea7881d16ef794c8e243b77ce4b15a8a5356924059ba79436e05a9ca7c",
+      "sample_sha256": "45480f37cf03c4bc7adcb4168340213bbc030a7b1f8fd311bede90dec7a17995",
+      "original_dimensions": [
+        4000,
+        3000
+      ],
+      "sample_dimensions": [
+        1600,
+        1200
+      ],
+      "changes": "Full frame resized to fit 1600x1200; JPEG quality 90; no crop; metadata not copied",
+      "license": {
+        "id": 1,
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "name": "CC BY 4.0"
+      }
+    }
+  ]
+}

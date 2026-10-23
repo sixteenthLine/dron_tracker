@@ -1,0 +1,15 @@
+[pipeline]
+input_path = "synthetic:civilian-demo"
+output_path = "outputs/synthetic_civilian_tracked.mp4"
+source_type = "synthetic"
+detector_backend = "mock"
+tracker_backend = "iou"
+threshold = 0.50
+frame_skip = 0
+max_frames = 24
+fps = 12.0
+deterministic_demo = true
+iou_threshold = 0.20
+max_missed = 3
+min_box_area = 25.0
+log_level = "INFO"

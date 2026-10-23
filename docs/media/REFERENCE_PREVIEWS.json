@@ -1,0 +1,28 @@
+{
+  "kind": "reference_annotations_not_model_output",
+  "annotation_sha256": "0d1436309cf11f231055358a461e63ac7401e50db30785b237cb45de314faac8",
+  "previews": [
+    {
+      "file": "reference_park.jpg",
+      "source_image_id": 0,
+      "source_file": "park.jpg",
+      "boxes": 15,
+      "dimensions": [
+        1280,
+        1152
+      ],
+      "sha256": "490b98b07190a89f11eede1a32c7f9f4385827915f449327b154f8a140e6dade"
+    },
+    {
+      "file": "reference_terrain.jpg",
+      "source_image_id": 100,
+      "source_file": "terrain.jpg",
+      "boxes": 1,
+      "dimensions": [
+        1280,
+        1152
+      ],
+      "sha256": "70a991e8217f5bbc0653aeddfea81e36f12abbfa3ab231f2583ae64113f51421"
+    }
+  ]
+}

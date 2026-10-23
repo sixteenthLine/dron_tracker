@@ -1,0 +1,56 @@
+name: Tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  cpu-tests:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      CUDA_VISIBLE_DEVICES: ""
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: |
+            requirements.txt
+            requirements-training.txt
+      - name: Install CPU dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install torch==2.5.1 torchvision==0.20.1 --index-url https://download.pytorch.org/whl/cpu
+          python -m pip install -r requirements-training.txt
+          python -m pip install -e . --no-deps
+          python -m pip check
+      - name: Check publication contents and documentation links
+        run: python scripts/verify_publication.py
+      - name: Unit tests and ROS helper tests
+        run: python -m pytest -q tests/test_coco_dataset.py tests/test_tracking.py tests/test_ros_bridge.py
+      - name: Pipeline integration tests
+        run: python -m pytest -q tests/test_pipeline.py
+      - name: Training data, metrics, and resume tests without model downloads
+        run: python -m pytest -q tests/test_training.py
+      - name: Reference previews are annotations, not model predictions
+        run: |
+          python -m pytest -q tests/test_reference_preview.py
+          python scripts/render_reference_previews.py
+      - name: Synthetic CLI smoke test
+        run: |
+          aerial-detect create-demo-video --output outputs/synthetic_civilian_input.mp4 --frames 24 --fps 12
+          aerial-detect run-pipeline --config configs/synthetic_video_demo.toml
+          aerial-detect infer-video --input outputs/synthetic_civilian_input.mp4 --output outputs/synthetic_civilian_infer_video.mp4 --detector mock --tracker iou --max-frames 8 --fps 12
+          aerial-detect validate
+          python -c "from pathlib import Path; files = list(Path('outputs').glob('*.mp4')); assert len(files) == 3 and all(p.stat().st_size > 0 for p in files)"

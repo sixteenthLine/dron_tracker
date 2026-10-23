@@ -1,0 +1,18 @@
+[training]
+manifest = "/content/training_data/manifest.json"
+image_root = "/content/heridal/train"
+output_dir = "/content/drive/MyDrive/aerial-detection/run1"
+scope = "full"
+device = "cuda"
+image_size = 768
+tile_size = 768
+overlap = 128
+batch_size = 2
+inference_batch_size = 2
+epochs = 20
+val_limit = 8
+train_mode = "full"
+learning_rate = 0.0005
+seed = 42
+checkpoint_every = 100
+patience = 5

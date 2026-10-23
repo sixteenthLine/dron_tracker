@@ -1,3 +1,40 @@
-goturn.caffemodel
-goturn.prototxt
+# Local environments and Python build products
+.venv*/
+venv/
 __pycache__/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+*.py[cod]
+build/
+dist/
+.coverage*
+htmlcov/
+
+# Local datasets, model weights, and generated runs
+/Heridal*/
+/data/
+/datasets/
+/outputs/
+/checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.caffemodel
+*.npy
+
+# Previous demo photos; current publication uses the aerial examples
+/assets/sample_civilian_dog.jpg
+/assets/sample_public_dog.jpg
+
+# Machine-specific files and credentials
+.DS_Store
+._*
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.idea/
+.vscode/
