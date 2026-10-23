@@ -1,7 +1,7 @@
 # Contributing
 
 Run commands from the repository root. Use Python 3.11 and the installation
-commands in [README.md](README.md).
+commands in [the runbook](docs/RUNBOOK.md#installation).
 
 ```bash
 .venv-level-b/bin/python -m pytest
